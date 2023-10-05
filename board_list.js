@@ -22,7 +22,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
-let docs = await getDocs(collection(db, "콜렉션이름"));
+let docs = await getDocs(collection(db, "board"));
 docs.forEach((doc) => {
     let row = doc.data();
     console.log(row);
